@@ -298,7 +298,7 @@ afisare_vector:
     et_int_dr:
         movl $1024, %eax
         cmp %eax, dr
-        je et_gasit_int_dr ;// afisarea intervalului pt capat de vector
+        je et_gasit_int_dr 
 
         movl dr, %eax
         movl (%esi,%eax,4), %ebx
@@ -432,3 +432,4 @@ et_exit:
     movl $1, %eax
     xorl %ebx, %ebx  
     int $0x80
+
