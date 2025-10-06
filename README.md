@@ -5,11 +5,11 @@ A low-level simulation of **file storage and memory management**, implemented in
 The project models how an operating system could handle **file allocation, retrieval, deletion, and defragmentation** within **1D and 2D memory structures**.
 
 Developed as part of the **Computer Systems Architecture** course  
-📍 *Faculty of Mathematics and Computer Science, University of Bucharest*  
+*Faculty of Mathematics and Computer Science, University of Bucharest*  
 
 ---
 
-## 🧩 Overview
+## Overview
 
 The simulator works in two main modes:
 1. **1D Memory Model** — memory represented as a linear vector of 1024 cells  
