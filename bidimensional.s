@@ -434,21 +434,20 @@ defrag:
 
             jmp et_mutare_lin
 
-        et_gata_defrag1_fail: ;// nu s-a intamplat nimic
+        et_gata_defrag1_fail:
             movl $0, lin1
             movl $0, stg1
             movl $0, drp1
 
             jmp et_inc_lin_defrag
 
-        et_gata_defrag1: ;// s-a mutat de pe o linie pe alta
+        et_gata_defrag1:
             movl $0, lin1
             movl $0, stg1
             movl $0, drp1
 
             movl $0, stg
             movl $0, dr
-            ;// 0 in stg 0 in dr -> se reia linia 
 
             jmp et_cautare_zero
 
@@ -611,7 +610,7 @@ afisare_matrice:
     et_int_dr:
         movl $1024, %eax
         cmp %eax, stg
-        jae et_gasit_int_dr ;// afisarea intervalului pt capat de vector
+        jae et_gasit_int_dr 
 
         movl lin, %eax
         xorl %edx, %edx
@@ -646,10 +645,6 @@ afisare_matrice:
         ret
 
 
-concrete:
-    
-
-    ret
 
 
 .global main
@@ -776,3 +771,4 @@ et_exit:
     mov $1, %eax
     xor %ebx, %ebx  
     int $0x80
+
