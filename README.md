@@ -25,7 +25,7 @@ The system can:
 
 ---
 
-## ⚙️ Features
+## Features
 
 | Operation | Description |
 |------------|-------------|
